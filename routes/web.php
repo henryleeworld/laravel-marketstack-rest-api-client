@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('marketstack/eod/', [StockMarketController::class, 'getEndOfDay']);
 Route::get('marketstack/intraday/', [StockMarketController::class, 'getIntraday']);
 Route::get('marketstack/tickers/', [StockMarketController::class, 'getTickers']);

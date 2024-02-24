@@ -1,4 +1,4 @@
-# Laravel 8 Marketstack 具象狀態傳輸應用程式介面用戶端
+# Laravel 9 Marketstack 具象狀態傳輸應用程式介面用戶端
 
 Marketstack 提供了免費，安全且易於使用的 API，用於即時訪問所有市場中上市公司的業績，開盤價、收盤價、最高價及最低價的形成則進一步影響價格變化。
 
