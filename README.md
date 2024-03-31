@@ -1,4 +1,4 @@
-# Laravel 9 Marketstack 具象狀態傳輸應用程式介面用戶端
+# Laravel 10 Marketstack 具象狀態傳輸應用程式介面用戶端
 
 Marketstack 提供了免費，安全且易於使用的 API，用於即時訪問所有市場中上市公司的業績，開盤價、收盤價、最高價及最低價的形成則進一步影響價格變化。
 
@@ -27,14 +27,14 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/8ck5JAy.png)
+![](https://i.imgur.com/VxeGOtD.png)
 > 取得一個或多個股票行情的盤後資訊
 
-![](https://i.imgur.com/G1tw1jX.png)
+![](https://i.imgur.com/4bEX7Hg.png)
 > 取得間隔短至一分鐘的日內資訊
 
-![](https://i.imgur.com/QyNdwdp.png)
+![](https://i.imgur.com/XYlJe1f.png)
 > 取得一個或多個股票代碼資訊
 
-![](https://i.imgur.com/lAntfhY.png)
+![](https://i.imgur.com/wuF3HGn.png)
 > 取得 70 多個證券交易所中的任何一個資訊
