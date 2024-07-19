@@ -1,23 +1,28 @@
 <?php
 
-namespace App\Services;
+namespace App\Http\Integrations\Marketstack;
 
 use GuzzleHttp\Client;
 
 /**
- * Marketstack service
+ * Marketstack connector
  *
  * @filesource
  */
-class MarketstackService
+final readonly class MarketstackConnector
 {
     /**
      * @var client
      */
-    protected $client;
+    private Client $client;
 
     /**
-     * Instantiate a new MarketstackService instance.
+     * @var endpointAllowedList
+     */
+    private array $endpointAllowedList;
+
+    /**
+     * Instantiate a new MarketstackConnector instance.
      *
      * @param Client $client Client
      *
@@ -39,7 +44,7 @@ class MarketstackService
     private function getQueryString(array $queryStringAry = []): array
     {
         return array_merge($queryStringAry, [
-            'access_key'  => config('marketstack.api_access_key'),
+            'access_key'  => config('services.marketstack.api_access_key'),
         ]);
     }
 
@@ -55,7 +60,7 @@ class MarketstackService
         if (!in_array($endpoint, $this->endpointAllowedList)) {
             return false;
         }
-        $response = $this->client->request('GET', config('marketstack.base_url') . $endpoint, [
+        $response = $this->client->request('GET', config('services.marketstack.base_url') . $endpoint, [
             'query' => $this->getQueryString($queryStringAry),
             'curl' => [
                 CURLOPT_FOLLOWLOCATION => true,
