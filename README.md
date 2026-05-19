@@ -1,4 +1,4 @@
-# Laravel 11 Marketstack 具象狀態傳輸應用程式介面用戶端
+# Laravel 12 Marketstack 具象狀態傳輸應用程式介面用戶端
 
 Marketstack 提供了免費，安全且易於使用的 API，用於即時訪問所有市場中上市公司的業績，開盤價、收盤價、最高價及最低價的形成則進一步影響價格變化。
 
@@ -16,6 +16,10 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/marketstack/eod` 來進行 MarketStack 盤後資訊取得。
 - 你可以經由 `/marketstack/intraday` 來進行 MarketStack 日內資訊取得。
@@ -27,14 +31,11 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/1OOaTRz.png)
+![](https://i.imgur.com/n2gd4uz.png)
 > 取得一個或多個股票行情的盤後資訊
 
-![](https://i.imgur.com/t2hUUfl.png)
-> 取得間隔短至一分鐘的日內資訊
-
-![](https://i.imgur.com/CJOz7f4.png)
+![](https://i.imgur.com/5fnZbb4.png)
 > 取得一個或多個股票代碼資訊
 
-![](https://i.imgur.com/LMSaG7E.png)
+![](https://i.imgur.com/xWVgPXl.png)
 > 取得 70 多個證券交易所中的任何一個資訊

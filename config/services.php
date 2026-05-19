@@ -14,6 +14,11 @@ return [
     |
     */
 
+    'marketstack' => [
+        'api_access_key' => env('MARKETSTACK_API_ACCESS_KEY', ''),
+        'base_url'       => env('MARKETSTACK_BASE_URL', 'http://api.marketstack.com/v1/'),
+    ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
@@ -33,11 +38,6 @@ return [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
-    ],
-
-    'marketstack' => [
-        'api_access_key' => env('MARKETSTACK_API_ACCESS_KEY', ''),
-        'base_url'       => env('MARKETSTACK_BASE_URL', 'http://api.marketstack.com/v1/'),
     ],
 
 ];

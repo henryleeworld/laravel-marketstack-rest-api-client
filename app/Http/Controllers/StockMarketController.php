@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Integrations\Marketstack\MarketstackConnector;
-use Carbon\Carbon;
+use Illuminate\Support\Carbon;
 
 class StockMarketController extends Controller
 {
@@ -11,10 +11,6 @@ class StockMarketController extends Controller
 
     /**
      * Instantiate a new StockMarketController instance.
-     *
-     * @param MarketstackConnector $marketstackConnector
-     *
-     * @return Response
      */
     public function __construct(MarketstackConnector $marketstackConnector)
     {
@@ -23,8 +19,6 @@ class StockMarketController extends Controller
 
     /**
      * Get end of day.
-     *
-     * @return Response
      */
     public function getEndOfDay()
     {
@@ -56,8 +50,6 @@ class StockMarketController extends Controller
 
     /**
      * Get intraday.
-     *
-     * @return Response
      */
     public function getIntraday()
     {
@@ -83,8 +75,6 @@ class StockMarketController extends Controller
 
     /**
      * Get tickers.
-     *
-     * @return Response
      */
     public function getTickers()
     {
@@ -110,8 +100,6 @@ class StockMarketController extends Controller
 
     /**
      * Get exchanges.
-     *
-     * @return Response
      */
     public function getExchanges()
     {
@@ -138,8 +126,6 @@ class StockMarketController extends Controller
 
     /**
      * Get currencies.
-     *
-     * @return Response
      */
     public function getCurrencies()
     {
@@ -156,8 +142,6 @@ class StockMarketController extends Controller
 
     /**
      * Get timezones.
-     *
-     * @return Response
      */
     public function getTimezones()
     {
